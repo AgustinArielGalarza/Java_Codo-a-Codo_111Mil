@@ -1,0 +1,56 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ejercicio225;
+
+import java.util.Scanner;
+
+public class Ejercicio225 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("ingrese letra R, M o D");
+        String letra = sc.nextLine();
+        
+        switch (letra){
+            case "R":
+               ProcedimientoR(sc);
+               break;
+            case "M":
+              ProcedimientoM(sc);
+               break;
+                
+        }
+        
+        
+     
+    }
+    public static void ProcedimientoR (Scanner sc){
+            int numero1 = sc.nextInt();
+                System.out.println("ingrese numero");
+                int numero2 = sc.nextInt();
+                System.out.println("ingrese numero");
+                int resta = numero1 - numero2;
+
+                if(resta > 0){
+                    System.out.println("la "+resta+"es:");
+                }else{
+                    System.out.println("el resultado es negatio");
+                }
+    }
+    public static void ProcedimientoM (Scanner sc){
+           int numero = sc.nextInt();
+                
+                while(numero != -1){
+                    if(numero % 2 == 0){
+                    System.out.println("es par");
+                }else{ 
+                        System.out.println("es impar");    
+                        }
+               break;
+    }
+    
+}
